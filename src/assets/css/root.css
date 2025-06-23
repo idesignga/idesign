@@ -61,37 +61,39 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-
+  /* Custom Text Effects */
+  .text-blue {
+    color: var(--secondary);
+  }
+  .text-pink {
+    color: var(--primary);
+  }
   .text-gradient {
     background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #1E4FF4;
+    display: inline-block;
+    position: relative;
+    color: #1E4FF4;
   }
-
   .hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #1E4FF4;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1E4FF4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
-
   .hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
-
   .cs-button-solid {
     text-align: center;
     font-size: 1rem;
@@ -843,8 +845,6 @@
     z-index: 100;
   }
   #cs-navigation .cs-logo img {
-    /* width: auto;
-    height: 100%; */
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: scale-down;
   }
@@ -1144,6 +1144,41 @@
     color: var(--bodyTextColorWhite);
     margin-bottom: clamp(1.25rem, 4.2vw, 3rem);
   }
+  #cta-262 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cta-262 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cta-262 .cs-button-solid:hover:before {
+    width: 100%;
+  }
   #cta-262 .cs-content {
     display: flex;
     flex-direction: column;
@@ -1219,7 +1254,7 @@
     position: relative;
   }
   #cs-footer-1292 .cs-logo {
-    width: 12.23.875em;
+    width: 23.875em;
     height: auto;
     display: block;
     /* 20px - 24px */
@@ -1281,20 +1316,6 @@
     color: var(--bodyTextColor);
     position: relative;
     display: inline-block;
-    transition: color 0.3s;
-  }
-  #cs-footer-1292 .cs-nav-link:before {
-    /* underline */
-    content: "";
-    width: 0%;
-    height: 0.125rem;
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.125rem;
-    left: 0;
-    transition: width 0.3s;
   }
   #cs-footer-1292 .cs-bottom {
     max-width: 80rem;
