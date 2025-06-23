@@ -1,0 +1,125 @@
+---
+title: 'Featured Clients | iDesign'
+description: 'Learn how you could earn a free Client of the Month shoutout, or become one of our premium Featured Clients!'
+preloadImg: '/assets/images/d3-logo.png'
+permalink: '/clients/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/clients.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Featured Clients</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/backgrounds/hero-blobs.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/backgrounds/hero-blobs.svg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/backgrounds/hero-blobs.svg" alt="hero blobs" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <img loading="lazy" decoding="async" src="../assets/images/clients/next-gen-mockups.png" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Meet</span> -->
+            <h2 class="cs-title">NextGen Academy</h2>
+            <p class="cs-text">
+                NextGen Academy is a nonprofit dedicated to developing youth student-athletes through elite football training, leadership development, and community engagement. Their website is bold and beautiful. It features a rotating events calendar and portals to donate and support.
+            </p>
+            <a class="cs-button-solid" aria-label="visit next-genacademy.com" href="https://www.next-genacademy.com/" target="_blank">Visit NextGen Academy</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="../assets/images/clients/green-only-mockups.png">
+            <source media="(min-width: 601px)" srcset="../assets/images/clients/green-only-mockups.png">
+            <img loading="lazy" decoding="async" src="../assets/images/clients/green-only-mockups.png" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Meet</span> -->
+            <h2 class="cs-title">Green Only</h2>
+            <p class="cs-text">
+                Green Only is a veteran-owned landscaping and lawn maintenance company, offering services all over north Georgia. Their website is snappy and modern, while also being familiar and inviting.
+            </p>
+            <a class="cs-button-solid" aria-label="visit thegreenonly.com" href="https://www.thegreenonly.com/" target="_blank">Visit Green Only</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Triplet             -->
+<!-- ============================================ -->
+
+<section id="RTsbst-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="../assets/images/clients/irepair-mockups.png">
+            <source media="(min-width: 601px)" srcset="../assets/images/clients/irepair-mockups.png">
+            <img loading="lazy" decoding="async" src="../assets/images/clients/irepair-mockups.png" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Meet</span> -->
+            <h2 class="cs-title">iRepair</h2>
+            <p class="cs-text">
+                iRepair is a Level 3 electronics repair provider, specializing in mobile devices, computers, and gaming consoles. Their website offers a sleek and modern design, with in-depth modals for each of their many services.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="https://www.irepairga.com/" target="_blank">Visit iRepair</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Want some free promo?</span>
+                <h2 class="cs-title">Learn how to become a Featured Client, and let us promote your business!</h2>
+            </div>
+            <div class="cs-button-box">
+                <a href="/contact" class="cs-button-solid">Become a Featured Client</a>
+                <a href="/pricing" class="cs-button-solid cs-button1">Pricing</a>
+            </div>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../assets/images/backgrounds/hero-blobs-5.svg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../assets/images/backgrounds/hero-blobs-6.svg">
+        <img loading="lazy" decoding="async" src="../assets/images/backgrounds/hero-blobs-6.svg" alt="mechanic" width="1280" height="568">
+    </picture>
+</section>
+
+{% endblock %}

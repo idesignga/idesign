@@ -1,0 +1,95 @@
+---
+title: 'Web Design & Development | iDesign'
+description: 'Websites starting at $0 down and $99/mo!'
+preloadImg: '/assets/images/d3-logo.png'
+permalink: '/web-design/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Web Design</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/backgrounds/hero-blobs-2.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/backgrounds/hero-blobs-2.svg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/backgrounds/hero-blobs-2.svg" alt="hero blobs" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">100% <span class="cs-color">Custom Code</span></h1>
+            <p>
+                Helping a business lay a solid foundation means that everything we do at <em>iDesign</em> is built from the ground up. This allows us to precicely identify a business owner’s needs and offer truly unique solutions to each and every entrepreneur we work with. At <em>iDesign</em>, we don’t use WordPress templates or online site builders like Wix or GoDaddy Aero. Frankly, we think they’re lazy and actually non-optimal from a performance perspective. Instead, all of our websites are coded by hand every single time. This has allowed us to optimize an entirely new workflow, where we can deliver websites that are beautiful, fast, and more secure—all in half the time as most other web developers.
+            </p>
+            <h2>How it Help Your Business</h2>
+            <h3>Everything You Need and Nothing You Don't</h3>
+            <p>
+                The great thing about building a website from the ground up is that you are able to quickly identify which elements you absolutely need and which elements may not serve your business. Does an accountant’s website need a photo gallery? Does a restaurant need an “extended services” section? Oftentimes when using web templates, we don’t consider these questions and ultimately end up sacrificing the integrity of our work just to fill a page. It’s like trying to squeeze all of your clients into the same shaped hole. Our solution: carve a new whole for each customer instead. 
+            </p>
+            <h3>Every Site is Unique to Every Client</h3>
+            <p>
+                To continue the above metaphor—the beauty in carving a new hole for each client is simply that <em>their business will stand out more for having a unique presention</em>. Have you ever noticed that every lawn care service and HVAC company in your city all have websites that look vaguely similar? This can confuse customers, and more often than not allows them to forget your business entirely amidst all the noise. It is far better to have a website that is unique to your business and presents your brand in a distinct way. People will know when they visit <em>your</em> website, and they won’t forget it!
+            </p>
+            <h3>Websites That Perform Better Rank Better</h3>
+            <p>
+                Search Engine Optimization (SEO) is a term that gets thrown around a lot among online developers, but it is also a term that is broadly misunderstood. Many people assume that a site’s ability to rank depends soley on “keyword usage” and whether or not they have a “blog” section. But did you know, the single greatest factor in your site’s ability to rank on Google is…page load time? That’s right—in this day and age, webpage latency is the single greatest killer of qualified leads and customer conversions. This is why we code our sites the way we do. Starting from the ground up means our sites are optimized for speed, without all the extra bloat you would find with online site builders.
+            </p>
+            <h4>Did You Know</h4>
+            <ul>
+                <li>Customers are quick to judge. <strong>A 1-second delay in your website can lead to a 7% reduction in conversions.</strong></li>
+                <li>Google found that <strong>53% of mobile users leave a site that takes longer than 3 seconds to load.</strong> And when customers leave, they’re gone!</li>
+            </ul>
+            <h3>Our System Guarantees Higher Security</h3>
+            <p>
+                Maybe the greatest thing about our development process is that, because it’s so simple, it’s about as secure as can be! The internet is a delicate machine, composed of complicated systems and a trillion little points of failure. The advantage to developing websites in the way we do is that the fewer moving parts we have to implement, the harder our sites are to break into. Websites built using templates and web builders are incredibly fragile, and more prone to glitches, shut downs, DDOS attacks, and general server-side failures. This is because a tiny issue present in one component gets propagated all over the internet as more and more people use the same templates. The more exposure these templates get, the higher likelihood they fall into the hands of bad actors who can expose those vulnerabilities to gain admin access to your website or even expose sensitive customer information. Our websites are built to last. When you choose <em>iDesign</em>, you are choosing security. Our websites are internet fortresses; we lay every single brick by hand and with intent.
+            </p>
+            <a href="/contact" class="cs-button-solid cs-button1">Get Started</a>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/web-design.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/web-design.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/web-design.jpg" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+
+            <!--Flower Graphic-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="362" height="350" aria-hidden="true">
+
+            <!--Spidey Sense Graphic-->
+            <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+                                
+
+    {% include 'components/cta.html' %}
+{% endblock %}  

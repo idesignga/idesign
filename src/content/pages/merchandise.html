@@ -1,0 +1,79 @@
+---
+title: 'Custom Merchandise | iDesign'
+description: 'Print-on-demand merchandise for you and your team. Offering t-shirts, hats, and much more!'
+preloadImg: '/assets/images/d3-logo.png'
+permalink: '/merchandise/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Merchandise</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/backgrounds/hero-blobs-4.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/backgrounds/hero-blobs-4.svg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/backgrounds/hero-blobs-4.svg" alt="hero blobs" loading="eager" width="2500" height="1667">
+    </picture>
+
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-713">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">On <span class="cs-color">Branding</span></h1>
+            <p>
+                In the digital age, one of the hardest things to do as a business is to try and keep up with the ever-changing social media landscape, while also establishing yourself as a legitimate business amidst all the trends that seem to come and go every day. The solution to this problem is to focus on creating something that lasts; to have a rock solid vision for your business that you can bring to any marketplace and advertise in any community. This is called <strong>brand</strong>—and your brand is everything. It is your business’ reputation; how you advertise in every market; your ability to deliver on what you promise; the expectations of your clients. When someone sees your name or your logo, these are all the things they inevitably consider. <em>How do they feel?</em> And how can <em>iDesign</em> help?
+            </p>
+            <h3>Not a Branding Company</h3>
+            <p>
+                Admittedly, <em>iDesign</em> is not a traditional branding-first company. We are also not a marketing agency, nor a consulting firm. <em>Yet</em>. However, we are still driven by the singular focus of helping new business owners put together cohesive visions for their companies. This is why we offer so much more than just websites. Last year, we began offering business cards and logo design. In 2025 we are introducing our new Merchandising Department. Our ability to design and ship custom merchandise for your team brings us closer to the roots of your business and allows us to tackle even deeper issues for you. For us, this is just the beginning. We look forward to putting together something great with you!
+            </p>
+            <h3>An Offer So Good…</h3>
+            <p>
+                Oftentimes when small business owners are just getting started, we tend to jump the gun on a lot of things. We will spend thousands to get our first work truck wrapped with a logo we paid nothing for online. Or we will spend hundreds of dollars per month for an agency to make social media pages for us, even before we have any work to promote. While these things are important in establishing one’s business, it is even more important to not let these things distract us from the real work of building a great company. Too often, we get so caught up in the side quests, we forget to advance the main story! That said, at <em>iDesign</em>, we at least want to help you get the branding ball rolling, and our way of doing that is to now offer custom merchandise design with our New Business Owner Packages. Whether you need t-shirts and hats for your team, coffee mugs or pens for your office, or something even more unique; we offer <strong>two free batches each year</strong>, included with your monthly plan. This way you can see how your logo looks out in the wild without the stress of a massive marketing bill looming overhead. Our t-shirts will bring your team together, without distracting you from the real work you must get done. And in terms of cost, the price of designing, printing, and shipping all gets rolled into the same great monthly rate you already pay for your website and business cards! At <em>iDesign</em>, we focus strictly on providing as much value as possible to our clients, and we will continue to add to our packages to bring the greatest possible offer to you!
+            </p>
+            <a href="/contact" class="cs-button-solid cs-button1">Get Started</a>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../assets/images/merchandise.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../assets/images/merchandise.jpg">
+                <img loading="lazy" decoding="async" src="../assets/images/merchandise.jpg" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+
+            <!--Flower Graphic-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="362" height="350" aria-hidden="true">
+
+            <!--Spidey Sense Graphic-->
+            <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

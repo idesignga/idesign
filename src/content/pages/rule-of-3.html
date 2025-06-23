@@ -1,0 +1,304 @@
+---
+title: 'Rule of 3 & FAQ | iDesign'
+description: 'Understanding the engine that drives our business, and frequently asked questions.'
+preloadImg: '/assets/images/d3-logo.png'
+permalink: '/rule-of-3/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/rule-of-3.css">
+    
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Rule of Three</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/backgrounds/hero-blobs-6.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/backgrounds/hero-blobs-6.svg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/backgrounds/hero-blobs-6.svg" alt="hero blobs" loading="eager" width="2500" height="1667">
+    </picture>
+
+</section>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1450">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">What Is the "Rule of 3"?</span>
+            <h2 class="cs-title">It's How We Work</h2>
+            <p class="cs-text">
+                At <em>iDesign</em>, we believe in creating beautiful, responsive websites that present your business in the simplest terms, and which deliver all the information your customers need in the most effective way possible. We achieve this by streamlining the design process into <strong>3 simple steps</strong> and funneling all of our clients into one of <strong>3 basic site tiers</strong>. This is also why we offer <strong>3 different pricing tiers</strong>. On top of that, this is how we are able to guarantee a <strong>3-week turnaround time</strong> for everyone we work with, regardless of the size or scope of the business. Implementing these rules allows us to consistently deliver the same great results to each and every client who chooses us. By the way, have you seen our moto?
+                <br />
+                <strong><em>Design • Develop • Deliver</em></strong>
+                <br />
+                We believe all good things come in 3s! See the breakdown below:
+            </p>
+            <!-- <a href="" class="cs-button-solid">Read Our History</a> -->
+        </div>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1666">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../assets/images/3-fingers-sky.jpeg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../assets/images/3-fingers-sky.jpeg">
+                <img loading="lazy" decoding="async" src="../assets/images/3-fingers-sky.jpeg" alt="people standing" width="605" height="690">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Our Courses</span> -->
+            <h2 class="cs-title">Our 3-Step Model</h2>
+            <p class="cs-text">
+                In our years of working with entrepreneurs and designing websites for new business owners, we have found this three-step pipeline to be the smoothest path to getting a project off the ground and published in the quickest time possible.
+            </p>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/chat-dots.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Discussion Phase
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        The first step in our process involves a sit-down with the business owner, where we ask questions about the company itself and put together a vision for the project. During this step, we ask for <strong class="text-pink">no money up front</strong>! This is so we can determine which of our three tiers is the best fit for your business, and so that we can establish an appropriate timeline for the next two phases.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/palette.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Design Phase
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        After we have gathered the necessary information from you, we get straight to work bringing your new vision to life. During this phase, we like to go back and forth with our clients: sending design and branding ideas; sharing photos and site layouts; and honing in on a presentation that really speaks to everything your business offers. At this stage, we may put together several "<strong>mock sites</strong>" to determine a style that best represents you. We may even come out to take <strong>professional on-site photography</strong> or offer <strong>custom logo design</strong>—whatever the website needs to see your business vision through!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/tools.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Development Phase
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        By Stage 3, we are all hands on deck! Once we have settled on a design for your website, we immediately begin development to get the project off the ground within <strong>2-4 weeks</strong>. During development, we set up a <strong>live demo</strong> version of your website, so you can see all of our updates and changes in real time. This way, any necessary changes or requests can be made before your site is published. During this phase, we will also plug in any third-party integrations your site needs, such as payment processing or booking. And finally, we will set up your website's backend with our new in-house hosting platform, as well as set up your custom business email.
+                    </p>
+                </li>
+            </ul>
+            <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
+        </div>
+    </div>
+</section>
+
+<!-- Flipped Above Section for 3 Tiers -->
+<section id="services-1666">
+    <div class="cs-container">
+        
+        <div class="cs-content">
+            <!-- <span class="cs-topper">Our Courses</span> -->
+            <h2 class="cs-title">Our 3-Tier System</h2>
+            <p class="cs-text">
+                The tier system allows us to appropriately narrow the scope for any project we put together for a business owner. This reduces much of the overwhelm that can come with hiring a web designer, since different individuals may have differing opinions for what is too much and what isn't enough.
+            </p>
+            <ul class="cs-faq-group">
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/sun-low.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Tier I
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our first tier is your standard website, <strong>up to 10 pages</strong>. This website is the perfect solution for restaurants, landscapers, event planners, personal trainers, etc. We find Tier 1 to be the best fit for small businesses, startups, and self-employed individuals whose work often follows a singular focus. Whether to show off your portfolio, or simply to give your clients a place to book appointments, this tier is the perfect place to show the world what you're all about while funnelling new clientelle straight to your business!
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/sun-high.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Tier II
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        The second tier is just what you'd expect: a step above a basic landing page. Offering <strong>up to 20 unique pages/sections</strong>, websites that fall into this tier may appear just like a Tier 1 site at first, but ultimately offer much more in terms of customer engagement and <strong>back-end involvement</strong>. A Tier 2 site may have a digital store-front or rental system, which would require not only a checkout system for the front end, but also an admin panel and inventory management in the back. Tier 2 may be appropriate for car washes or clothing boutiques, property management agencies or self-storage companies, etc.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../assets/svgs/sun-full.svg" alt="icon" width="32" height="32">
+                        <span class="cs-button-text">
+                            Tier III
+                        </span>
+                        <span class="cs-indicator" aria-hidden="true"></span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our final tier is exclusively for large, enterprise-level operations. This tier often steps outside the scope of any single website and into the realm of dedicated web applications and e-commerce store-fronts. Best fit for established franchises and brands, these sorts of projects will require 24/7 maintenance due to the volume of client interaction, orders processed, and the demand for regular site-wide updates and overhauls. Think grocery stores, major retailers, amusement parks, and even public school systems.
+                    </p>
+                </li>
+            </ul>
+            <!-- <a href="" class="cs-button-solid">View All Courses</a> -->
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../assets/images/3-fingers-ground-mobile.jpeg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../assets/images/3-fingers-ground.jpeg">
+                <img loading="lazy" decoding="async" src="../assets/images/3-fingers-ground.jpeg" alt="people standing" width="605" height="690">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+        </div>
+        <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How can I know which site tier is best for me?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    At <em>iDesign</em>, the first step on our journey together is having you take our Onboarding Survey, which gives us an idea of the type of business you have and the proper scope for the overall project. After that, we move forward with the Discussion Phase so we can determine a tier that fits your business best.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What if I want a Tier II website, but don't need business cards and all the extra stuff?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Though the packages we offer are fixed, everything we do is built around flexibility. With our New Business Owner Bundle, you get unlimited access to everything, even if you aren't ready to take advantage of it all quite yet. If you're sure you won't need any of the add-ons, reach out to us and we will gladly put together a custom plan just for you! 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Why is your turnaround time 3 weeks?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Have you read the Rules of 3? Most web developers ballpark around 1-2 months to deliver a project for their clients. At <em>iDesign</em>, we have streamlined our production such that we can confidently turn websites around in as little as 21 days or less. This means that if you sign up with our New Business Owner Bundle, your business cards and merchanidise will arrive at the exact same time your website is ready to go live—everything gets delivered at once!
+                </p>
+            </li>
+             <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How does "Lifetime Maintenance" work? What qualifies as an "Edit"?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Since websites hosted on our monthly plans get access to our in-house hosting and support, we guarantee lifelong maintenance to all of our monthly clients. This means that if you ever run into issues or glitches with your website or email, we will resolve it for you accordingly, no matter how long it has been since you signed up with us. We also offer monthly clients an unlimited number of site edits, which includes any changes to page text content, images, or videos. New page or section additions falls under "Site Upgrades" and are charged on a per-page basis.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        If I pay as a lump sum, do I still have to pay for my domain as well as hosting?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    All of our new pricing plans allow us to roll the cost of domain acquisition, hosting, and maintenance all into the same monthly fee. For clients interested in the lump sum, or "Legacy" plan, we allow you to use our in-house hosting servers for a single price of just $25/mo. Otherwise, we can walk you through acquiring your domain and finding a suitable host with any of our third-party hosting partners.
+                </p>
+            </li>
+             <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What is "Flexible" vs "Priority" support?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    As a client of <em>iDesign</em>, you get a direct cell line to call or text your developer at any time during or after production. Flexible Support is our standard availability rate: if you reach out during business hours, you can expect a reply within 24-48 hours. Priority Support is for customers on our New Business Owner plan. These customers will recieve guaranteed same-day responses, as well as expedited resolution times.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How do the photography days work?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    At <em>iDesign</em>, we believe that for a website's design to be effective, all elements of the web page must work in harmony. Not just the text on the page, but also the style of images and video modals. For that reason, we offer a single on-site photography day for all of our clients. The way it works is simple:  you may schedule your photography day for any day during production, and we will come out to take photos of you and your team on the job. Whether it be a shoot at the office, or a ride-along with your agents in the field, we try to be as flexible as possible for all of our clients. Availability for photography days is first-come-first-serve between all of our clients, so it is best to book in advance.
+                </p>
+            </li>
+             <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Is there a minimum subscription time or contract? What happens if I cancel?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Short answer: yes. All of our monthly plans require a minimum 12-month contract. Since we don't charge anything upfront, this is just so we can make sure we've covered our immediate costs in building and hosting your website, as well as covering all of the extra add-ons as well. If after the 12 months you decide to cancel, we maintain the right to take the website offline and shut down the servers—however, you keep your domain as well as all of your branding, photos, videos, etc. We don't want to hold your business hostage!
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--SVG Background-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../assets/images/backgrounds/hero-blobs-5.svg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../assets/images/backgrounds/hero-blobs-3.svg">
+        <img aria-hidden="true" src="../assets/images/backgrounds/hero-blobs-5.svg" loading="lazy" decoding="async" alt="moon" width="1920" height="647">
+    </picture>
+</section>
+                                
+                                
+                                
+<!-- JS for 3-step drop downs -->
+<script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+</script>
+
+
+
+    {% include 'components/cta.html' %}
+{% endblock %}

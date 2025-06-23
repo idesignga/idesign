@@ -1,0 +1,315 @@
+/* PAGE-SPECIFIC STYLES FOR THE CLIENTS PAGE */
+
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbs-71,
+    #RTsbsr-71,
+    #RTsbst-71 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (542/16rem);
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-picture {
+            width: 95%;
+            max-width: (550/16rem);
+            margin: 0;
+            position: relative;
+            display: block;
+            /* width divided by height */
+            aspect-ratio: 312/335;
+            border-radius: (16/16rem);
+            z-index: 1;
+
+            &:before {
+                /* Top right box */
+                content: "";
+                width: (160/16rem);
+                /* 202px - 248px */
+                height: clamp(12.625rem, 25vw, 15.5rem);
+                background: #1a1a1a;
+                opacity: 1;
+                border-radius: (16/16rem);
+                position: absolute;
+                display: block;
+                /* 16px -20px */
+                /* wrapped in a calc function to get a negative clamp value */
+                top: ~"calc(clamp(.5rem, 2.09vw, 1.25rem) * -1)";
+                right: ~"calc(clamp(.5rem, 2.09vw, 1.25rem) * -1)";
+            }
+
+            &:after {
+                /* Bottom left box */
+                content: "";
+                width: (160/16rem);
+                /* 202px - 248px */
+                height: clamp(12.625rem, 25vw, 15.5rem);
+                background: #1a1a1a;
+                opacity: 1;
+                border-radius: (16/16rem);
+                position: absolute;
+                display: block;
+                /* 16px -20px */
+                /* wrapped in a calc function to get a negative clamp value */
+                bottom: ~"calc(clamp(.5rem, 2.09vw, 1.25rem) * -1)";
+                left: ~"calc(clamp(.5rem, 2.09vw, 1.25rem) * -1)";
+                z-index: -1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: (16/16rem);
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbs-71,
+    #RTsbsr-71,
+    #RTsbst-71 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            /* 60px - 128px */
+            gap: clamp(3.75rem, 9.5vw, 8rem);
+        }
+
+        .cs-picture {
+            /* 328px - 502px */
+            width: clamp(20.5rem, 37.5vw, 31.375rem);
+            /* 440px - 520px */
+            height: clamp(27.5rem, 40vw, 32.5rem);
+            /* 16px - 20px */
+            margin: 0 0 0 clamp(1rem, 5vw, 1.25rem);
+            flex: none;
+        }
+
+        .cs-content {
+            width: 45%;
+            margin: 0;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #RTsbs-71,
+        #RTsbsr-71,
+        #RTsbst-71 {
+            .cs-picture {
+                &:before,
+                &:after {
+                    background: var(--accent);
+                }
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbsr-71 {
+        background-color: #f7f7f7;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbsr-71 {
+        .cs-container {
+            justify-content: flex-end;
+        }
+
+        .cs-picture {
+            /* 16px - 20px */
+            margin-right: clamp(1rem, 5vw, 1.25rem);
+            /* forces it to the left */
+            order: 2;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #RTsbsr-71 {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-1071 {
+        padding: var(--sectionPadding);
+        background-color: var(--primary);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-flex {
+            max-width: (630/16rem);
+        }
+
+        .cs-title {
+            margin: 0;
+
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-button-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: (16/16rem);
+        }
+
+        .cs-button1 {
+            background-image: none;
+            background-color: #fff;
+            background: linear-gradient(#fff) padding-box,
+                        linear-gradient(to right, #1e30f3 0%, #e21e80 100%) border-box;
+            border: 1px solid transparent;
+            color: #000;             
+
+        &:hover {
+        background: linear-gradient(#000) padding-box,
+                    linear-gradient(#000) border-box;
+        box-shadow: 0px 0px 0px 0px #000;
+        background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+            }
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #1a1a1a;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cta-1071 {
+        .cs-content {
+            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .cs-button-box {
+            flex-wrap: nowrap;
+            align-items: center;
+            flex: none;
+        }
+    }
+}
+
+                                                                                   

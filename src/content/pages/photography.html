@@ -1,0 +1,77 @@
+---
+title: 'Professional Photography | iDesign'
+description: 'Now offering professional onsite photography and ride-along photo days!'
+preloadImg: '/assets/images/d3-logo.png'
+permalink: '/photography/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Photography</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/backgrounds/hero-blobs-5.svg">
+        <source media="(min-width: 601px)" srcset="/assets/images/backgrounds/hero-blobs-5.svg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/backgrounds/hero-blobs-5.svg" alt="hero blobs" loading="eager" width="2500" height="1667">
+    </picture>
+
+    </section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-714">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">The Pro Photography <span class="cs-color">Problem</span></h1>
+            <p>
+                The most recent pillar in our New Business Owner bundle is offering professional in-the-field photography days for you and your team. These days, one of the greatest mistakes we see small business owners make is paying top dollar for a professional website, but then filling that website with cheap-looking content. Whether its the overuse of stock images or fake, AI-generated photos, the lack of any real images quickly takes away from a business’ credibility. On the flip side, many business owners attempt to present their own photos as a way to seem authentic (e.g., photos shot on their iPhones at the end of a job), but ultimately end up sacrificing quality and appearing unprofessional. Everyone knows that if you’re paying to have a website made, you ought to get professional photos taken; the difficult part is that hiring a photographer can be incredibly expensive. You could end up paying thousands for a single session and end up not liking any of the photos they develop. The question is: where else can business owners turn?
+            </p>
+            <h3>Getting Quality Photos Made Easy</h3>
+            <p>
+                <em>iDesign</em> is a value-driven company. We pride ourselves in our ability to squeeze as much as we can into all of our packages to deliver the greatest possible value to each of our clients. We noticed a major shortcoming in the marketplace, and now we want to present a solution so great, it won’t make sense to take your business elsewhere:
+                <br />
+                When you choose <em>iDesign</em>, you earn a complete day of professional photography, included in your package—at no extra cost. And when we say a complete day, we mean it. If you run a traveling business, we will ride along with you. If you own multiple locations, we will drive around to each. If your team hunkers down in a single building, we will set the office up with you. Our goal is to provide the utmost flexibility for you so that the photos we take are both authentic and professional, while also being of the highest quality. That means when customers visit your website, all of your bases will be covered, and they will know you really mean business. This is how we help your business stand apart from the competition, without you having to shell out hundreds or even thousands of dollars at once. And here’s the real kicker: we won’t just do it once. When you sign up with our New Business Owner package, we will let you schedule <strong>two free photography days</strong> at any point throughout the year. So if you don’t like how the first batch came out, let us try again—at no extra cost to you.
+            </p>
+            <a href="/contact" class="cs-button-solid cs-button1">Get Started</a>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../assets/images/photography.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../assets/images/photography.jpg">
+                <img loading="lazy" decoding="async" src="../assets/images/photography.jpg" alt="person" width="570" height="680" aria-hidden="true">
+            </picture>
+
+            <!--Flower Graphic-->
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fbig-abstract-flower.svg" alt="flower graphic" width="362" height="350" aria-hidden="true">
+
+            <!--Spidey Sense Graphic-->
+            <img class="cs-sense" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fspider-sense.svg" alt="spidey sense graphic" width="80" height="89" aria-hidden="true">
+        </div>
+    </div>
+    <!--Waves Graphic-->
+    <picture class="cs-background">
+        <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Flarge-waves.svg" alt="waves" decoding="async" aria-hidden="true" width="625" height="952">
+    </picture>
+</section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}
